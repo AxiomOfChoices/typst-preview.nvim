@@ -17,7 +17,7 @@ local function spawn(path, mode, callback)
     or (utils.get_data_path() .. fetch.get_typst_bin_name())
   local server_handle, _ = assert(vim.loop.spawn(typst_preview_bin, {
     args = {
-      '--partial-rendering',
+      -- '--partial-rendering',
       '--invert-colors',
       config.opts.invert_colors,
       '--preview-mode',
